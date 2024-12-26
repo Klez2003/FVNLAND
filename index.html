@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <marquee><title>sadist.life</title></marquee>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:type" content="FVN LAND">
-    <meta property="og:title" content="FVN LAND'">
+
+    <!-- SEO and Discord Embed Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sadist Life - FVN LAND">
+    <meta property="og:description" content="Sadist Life is a platform for exposing bad people or those who are annoying. A space dedicated to revealing truth and showcasing the worst of society.">
     <meta property="og:url" content="https://sadist.life">
+    <meta property="og:image" content="https://i.imgur.com/a/4OmxUkU.gif">
+    <meta property="og:site_name" content="Sadist Life">
+    
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="https://i.imgur.com/a/4OmxUkU.gif">
-    <meta name="theme-color" content="#2f3136">
-    <script src="/cdn-cgi/apps/head/snwXCr1-OFKTB2o8D5sg5H4Y4Ng.js"></script>
+    <meta name="twitter:title" content="Sadist Life - FVN LAND">
+    <meta name="twitter:description" content="Sadist Life is a platform for exposing bad people or those who are annoying. Join us to uncover the truth.">
+    <meta name="twitter:image" content="https://i.imgur.com/a/4OmxUkU.gif">
+    
+    <!-- Bright/Neon Theme Colors for SEO -->
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="msapplication-TileColor" content="#DAFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#E1FF87">
+    <meta name="application-name" content="Sadist Life">
+    <meta name="msapplication-tooltip" content="Sadist Life - FVN LAND">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="/cdn-cgi/apps/head/snwXCr1-OFKTB2o8D5sg5H4Y4Ng.js"></script>
 </head>
- 
+
 <body>
+    <header>
+        <div class="typewriter" style="font-family: derk; text-shadow: 0 0 0.4em #bababa;">
+            sadist.life
+        </div>
+    </header>
+
     <main>
         <script>
             function playNextVideoAndAudio() {
                 var video = document.getElementById("video");
                 var audio = document.getElementById("audio");
- 
+
                 video.addEventListener("ended", function() {
                     // Play the next video
                     video.src = "assets/images/say.mp4";
                     video.play();
                 });
- 
+
                 audio.addEventListener("ended", function() {
                     // Play the next audio
                     audio.src = "assets/audio/say.mp3";
                     audio.play();
                 });
- 
+
                 // Start playing the initial video and audio
                 video.play();
                 audio.play();
@@ -74,9 +98,31 @@
                         $:
                         <a href="hall-of-admins/admins.html" style="text-decoration:none; font-family: derk; font-size: 1em;">Hall Of Admins</a>
                     </span>
- 
                 </div>
         </section>
     </main>
+
+    <style>
+        /* Typewriter Effect */
+        .typewriter {
+            font-size: 2em;
+            color: #FFFFFF;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.15em solid #FFFFFF;
+            animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from { border-color: transparent; }
+            to { border-color: white; }
+        }
+    </style>
 </body>
+
 </html>
