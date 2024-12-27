@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <marquee><title>sadist.life</title></marquee>
+    <meta charset="UTF-8">
+    <title>Sadist Life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -12,26 +12,21 @@
     <meta property="og:title" content="Sadist Life - FVN LAND">
     <meta property="og:description" content="Sadist Life is a platform for exposing bad people or those who are annoying. A space dedicated to revealing truth and showcasing the worst of society.">
     <meta property="og:url" content="https://sadist.life">
-    <meta property="og:image" content="https://i.imgur.com/a/4OmxUkU.gif">
+    <meta property="og:image" content="https://pomf2.lain.la/f/fze7ryyt.gif">
     <meta property="og:site_name" content="Sadist Life">
-    
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sadist Life - FVN LAND">
     <meta name="twitter:description" content="Sadist Life is a platform for exposing bad people or those who are annoying. Join us to uncover the truth.">
-    <meta name="twitter:image" content="https://i.imgur.com/a/4OmxUkU.gif">
-    
-    <!-- Bright/Neon Theme Colors for SEO -->
+    <meta name="twitter:image" content="https://pomf2.lain.la/f/fze7ryyt.gif">
+
+    <!-- Theme Colors -->
     <meta name="theme-color" content="#FFFFFF">
     <meta name="msapplication-TileColor" content="#DAFFFF">
     <meta name="apple-mobile-web-app-status-bar-style" content="#E1FF87">
-    <meta name="application-name" content="Sadist Life">
-    <meta name="msapplication-tooltip" content="Sadist Life - FVN LAND">
-    <meta name="mobile-web-app-capable" content="yes">
 
-    <!-- Custom Stylesheet -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
-
-    <script src="/cdn-cgi/apps/head/snwXCr1-OFKTB2o8D5sg5H4Y4Ng.js"></script>
 </head>
 
 <body>
@@ -47,19 +42,16 @@
                 var video = document.getElementById("video");
                 var audio = document.getElementById("audio");
 
-                video.addEventListener("ended", function() {
-                    // Play the next video
+                video.addEventListener("ended", function () {
                     video.src = "assets/images/say.mp4";
                     video.play();
                 });
 
-                audio.addEventListener("ended", function() {
-                    // Play the next audio
+                audio.addEventListener("ended", function () {
                     audio.src = "assets/audio/say.mp3";
                     audio.play();
                 });
 
-                // Start playing the initial video and audio
                 video.play();
                 audio.play();
             }
@@ -71,10 +63,10 @@
                 <span class="hover" style="font-family: derk; font-size: 0.6em;">click anywhere</span>
             </label>
         </div>
-        <audio loop="" preload="auto" id="audio">
+        <audio loop preload="auto" id="audio">
             <source src="assets/audio/j.mp3" type="audio/mp3">
         </audio>
-        <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+        <video muted loop playsinline preload="auto" class="fullscreen bg-video" id="video">
             <source src="assets/images/jew.mp4" type="video/mp4">
         </video>
         <section class="fullscreen text-content">
@@ -84,7 +76,7 @@
                     <h4>Owner; Klez</h4>
                     <span>
                         $:
-                        <a href="404" style="text-decoration:none; font-family: derk; font-size: 1em;">INVITE ONLY SERVER</a>
+                        <a href="404.html" style="text-decoration:none; font-family: derk; font-size: 1em;">INVITE ONLY SERVER</a>
                     </span>
                     <span>
                         $:
@@ -98,7 +90,30 @@
                         $:
                         <a href="hall-of-admins/admins.html" style="text-decoration:none; font-family: derk; font-size: 1em;">Hall Of Admins</a>
                     </span>
+                    <!-- Added Links Section -->
+                    <span>
+                        $:
+                        <a href="about/about.html" style="text-decoration:none; font-family: derk; font-size: 1em;">About</a>
+                    </span>
+                    <span>
+                        $:
+                        <a href="statement/statement.html" style="text-decoration:none; font-family: derk; font-size: 1em;">Statement</a>
+                    </span>
+                    <span>
+                        $:
+                        <a href="contact/contact.html" style="text-decoration:none; font-family: derk; font-size: 1em;">Contact</a>
+                    </span>
                 </div>
+
+                <!-- Request Removal Section -->
+                <div class="request-removal">
+                    <h2>Request for Removal</h2>
+                    <p>If you would like to request the removal of your content or data for privacy reasons, please contact us at:</p>
+                    <p><strong>Email: <a href="mailto:klez@cock.li">klez@cock.li</a></strong></p>
+                    <p>In your email, please use the subject line "Request for Removal" and provide the relevant details so we can process your request as soon as possible. Your privacy is important to us, and we will handle all requests in accordance with our privacy policy.</p>
+                </div>
+
+            </div>
         </section>
     </main>
 
@@ -121,6 +136,25 @@
         @keyframes blink {
             from { border-color: transparent; }
             to { border-color: white; }
+        }
+
+        /* Request Removal Section */
+        .request-removal {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .request-removal h2 {
+            font-family: derk;
+            font-size: 1.5em;
+        }
+
+        .request-removal p {
+            font-family: derk;
+            font-size: 1em;
         }
     </style>
 </body>

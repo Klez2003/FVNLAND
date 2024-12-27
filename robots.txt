@@ -1,0 +1,16 @@
+# Block all crawlers from accessing sensitive areas
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /user-data/
+
+# Allow only the public content to be indexed
+Allow: /public/
+Allow: /
+
+# Block specific aggressive bots
+User-agent: BadBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.sadist.life/sitemap.xml

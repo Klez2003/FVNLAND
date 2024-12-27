@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container {
+            color: black;
+            animation: textFlash 1s infinite;
+        }
+
+        @keyframes bgFlash {
+            0% { background-color: red; }
+            50% { background-color: white; }
+            100% { background-color: red; }
+        }
+
+        @keyframes textFlash {
+            0% { color: black; }
+            50% { color: red; }
+            100% { color: black; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404 Error</h1>
+        <p>The page you are looking for cannot be found!</p>
+    </div>
+
+    <script>
+        // Apply the flashing background
+        document.body.style.animation = "bgFlash 1s infinite";
+    </script>
+</body>
+</html>
