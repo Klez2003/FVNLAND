@@ -58,13 +58,6 @@
             margin-top: 10px;
         }
 
-        .scroll-notice {
-            font-size: 12px;
-            color: gray;
-            text-align: center;
-            margin-top: 5px;
-        }
-
         .rainbow {
             text-shadow: 2px 2px 4px #000000;
             -webkit-animation: rainbow 5s infinite;
@@ -95,28 +88,28 @@
 
         /* Home Button Styling */
         .home-button {
-            background-color: #444444;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: "Garamond", serif;
+            font-size: 28px;
+            font-weight: bold;
             color: white;
-            padding: 15px 25px;
+            text-shadow: 2px 2px 4px #000000;
+            text-decoration: none;
+            background-color: transparent;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-            margin-bottom: 20px; /* Adds some space above the button */
         }
 
         .home-button:hover {
-            background-color: #555555;
+            color: red;
         }
-
     </style>
 </head>
 <body>
     <!-- Home Button -->
-    <a href="https://sadist.life">
-        <button class="home-button">Home</button>
-    </a>
+    <a href="https://sadist.life" class="home-button">Home</a>
 
     <div class="banner-container">
         <pre>
@@ -145,7 +138,6 @@ $$/   $$/ $$$$$$$/  $$/      $$/ $$$$$$/ $$/   $$/  $$$$$$/
             <div class="name-text rainbow">"Scvm"</div>
             <p>FVN LɅND Owner.</p>
         </div>
-
     </div>
 </body>
 </html>
