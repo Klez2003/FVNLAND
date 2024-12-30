@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A tribute timeline to Juice WRLD, featuring his life story, struggles, and achievements in the music industry.">
+  <meta name="keywords" content="Juice WRLD, tribute, timeline, rapper, drug struggles, emo-rap, Chicago">
+  <meta name="author" content="Sadist Life">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Open Graph Meta Tags for Discord (Dynamically Updated with JS) -->
+  <meta property="og:title" content="Juice WRLD Timeline - Tribute to Juice WRLD">
+  <meta property="og:description" content="Explore the life and struggles of Juice WRLD, from his childhood to his rise in the music industry and his tragic passing.">
+  <meta property="og:url" content="https://juicewrld.sadist.life/timeline">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sadist Life - Juice WRLD Tribute">
+  <meta id="og-image" property="og:image" content="">
+
+  <!-- Twitter Card Meta Tags (Dynamically Updated with JS) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juice WRLD Timeline - Tribute to Juice WRLD">
+  <meta name="twitter:description" content="Explore the life and struggles of Juice WRLD, from his childhood to his rise in the music industry and his tragic passing.">
+  <meta name="twitter:image" content="">
+
+  <title>Juice WRLD Timeline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="main">
+
+  <header>
+    <section id="title">
+      <h1>Jarad Anthony Higgins (Juice WRLD)</h1>
+      <h2 id="tribute-info">Chicago rapper and singer who created the emo-rap style</h2>
+
+      <div id="img-div">
+        <img src="https://townsquare.media/site/812/files/2020/05/juice-wrld.jpg?w=980&q=75" id="image" alt="Juice WRLD at the 2018 MTV Video Music Awards">
+        <figcaption id="img-caption">
+          Higgins at the 2018 MTV Video Music Awards in August 2018.
+        </figcaption>
+      </div>
+    </section>
+  </header>
+
+  <h2 class="title-pg">About Juice WRLD</h2>
+
+  <ul id="ul">
+    <li><strong>1998</strong> Born on December 2 as Jarad Anthony Higgins in Chicago, Illinois, known professionally as Juice WRLD.</li><br>
+    <li><strong>2000</strong> His parents divorced when he was three years old. His father left, leaving his mother to raise him and an older brother as a single parent.</li><br>
+    <li><strong>2013</strong> Higgins was a heavy drug user during his childhood and teens. He began drinking lean in sixth grade and using Percocets and Xanax.</li><br>
+    <li><strong>2015</strong> Higgins began to develop as an artist in his first year of high school. His first track, "Forever", was released on SoundCloud under the name JuicetheKidd.</li><br>
+    <li><strong>2017</strong> "Too Much Cash", his first track to be produced by Nick Mira, was released in 2017. He joined the collective Internet Money and released his debut EP, 9 9 9.</li><br>
+    <li><strong>2018</strong> "Lucid Dreams" was released as a single and peaked at number two on the Hot 100, becoming one of the most streamed songs of 2018.</li><br>
+    <li><strong>2019</strong> Higgins's second studio album, Death Race for Love, was released and topped the Billboard 200 chart. He toured with Nicki Minaj.</li><br>
+    <li><strong>2020</strong> Higgins appeared posthumously on Eminem's "Godzilla" and the family confirmed the release of his unfinished work after his tragic passing.</li><br>
+  </ul>
+
+  <hr />
+
+<!-- Adding the concert video -->
+<section id="video-section">
+  <h2>Juice WRLD - Concert Video</h2>
+  <video class="responsive-video" controls>
+    <source src="juice.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<footer>
+  <div id="footer-content">
+    <section>To learn more about Jarad Anthony Higgins, check out
+      <a href="https://en.wikipedia.org/wiki/Juice_Wrld" id="tribute-link" target="_blank">Wikipedia entry</a> created by @<a href="https://discord.gg/UjtT7Fs2b3" target="_blank" id="my-page">Klez, Soul</a>.
+    </section>
+  </div>
+</footer>
+
+  <script>
+    // JavaScript to Randomly Select Image for Meta Tags
+    function getRandomImage() {
+      const images = [
+        'https://sadist.life/purple-juicewrld.jpg',
+        'https://sadist.life/purple-juicewrld-2.jpg',
+        'https://sadist.life/purple-juicewrld-3.jpg',
+        'https://sadist.life/purple-juicewrld-4.jpg',
+        'https://sadist.life/purple-juicewrld-5.jpg'
+      ];
+      const randomImage = images[Math.floor(Math.random() * images.length)];
+      return randomImage;
+    }
+
+    // Update Open Graph and Twitter Image Meta Tags
+    document.getElementById('og-image').setAttribute('content', getRandomImage());
+    const twitterMeta = document.querySelector('meta[name="twitter:image"]');
+    twitterMeta.setAttribute('content', getRandomImage());
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

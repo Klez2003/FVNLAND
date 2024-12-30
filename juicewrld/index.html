@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Juice WRLD Tribute - Legends Never Die</title>
+    <meta name="description" id="metaDescription" content="A passionate tribute to Juice WRLD's music, featuring his legacy with immersive visuals and sounds. Legends Never Die.">
+    <meta name="keywords" id="metaKeywords" content="Juice WRLD, Legends Never Die, The Party Never Ends, Tribute, Juice WRLD Music, Juice WRLD Fan Page, Juice WRLD Legacy, Discord Community">
+    <meta name="author" content="Soul (qfck), Klez (desiremyhoming), Peaci">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Embed -->
+    <meta property="og:title" content="Juice WRLD Tribute - Legends Never Die">
+    <meta property="og:description" content="A passionate tribute to Juice WRLD, celebrating his music and legacy. Legends Never Die.">
+    <meta property="og:image" id="ogImage" content="https://juicewrld.sadist.life/purple-juicewrld.jpg">
+    <meta property="og:url" content="https://juicewrld.sadist.life">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Juice WRLD Tribute">
+
+    <!-- Twitter Embed -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juice WRLD Tribute - Legends Never Die">
+    <meta name="twitter:description" content="A tribute to Juice WRLD's music, visuals, and community. Legends Never Die.">
+    <meta name="twitter:image" id="twitterImage" content="https://juicewrld.sadist.life/purple-juicewrld.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://juicewrld.sadist.life/favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        /* Background Video */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            display: none; /* Hidden initially */
+        }
+
+        /* Main Content Layout */
+        .content {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 30px; /* Space between sections */
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: lighter;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            max-width: 80%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            width: 250px;
+            padding: 15px 0;
+            margin: 10px 0; /* Spacing between buttons */
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            background-color: rgba(138, 43, 226, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #8a2be2;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.9);
+        }
+
+        /* Background Audio */
+        audio {
+            display: none;
+        }
+
+        /* Click to Enter Screen */
+        .click-to-enter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+    </style>
+
+    <!-- Randomize Embed Images Script -->
+    <script>
+        const images = [
+            "https://juicewrld.sadist.life/purple-juicewrld.jpg",
+            "https://juicewrld.sadist.life/purple-juicewrld-2.jpg",
+            "https://juicewrld.sadist.life/purple-juicewrld-3.jpg",
+            "https://juicewrld.sadist.life/purple-juicewrld-4.jpg",
+            "https://juicewrld.sadist.life/purple-juicewrld-5.jpg"
+        ];
+
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('ogImage').setAttribute('content', randomImage);
+            document.getElementById('twitterImage').setAttribute('content', randomImage);
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Initial 'Click to Enter' Section -->
+    <div class="click-to-enter" onclick="startSite()">
+        Click to Enter
+    </div>
+
+    <!-- Background Video -->
+    <video id="bg-video" autoplay muted loop preload="auto">
+        <source src="juice.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Main Content Layout (hidden initially) -->
+    <div class="content">
+        <h1>Tribute to Juice WRLD</h1>
+        <h2>"Legends Never Die"</h2>
+        <p>
+            Honoring Juice WRLD's life and music. Let his legacy live forever.  
+            Join the community and celebrate his art.
+        </p>
+        <a href="https://discord.gg/UjtT7Fs2b3" class="btn">Join Our Discord</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1318574566737448970" class="btn">Invite the Bot</a>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="bg-audio" autoplay loop>
+        <source src="juice.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Function to start the video and audio after clicking "Click to Enter"
+        function startSite() {
+            // Show the video and start audio playback
+            document.getElementById('bg-video').style.display = 'block';  // Show the background video
+            document.getElementById('bg-audio').play();  // Play the audio
+            document.querySelector('.content').style.display = 'flex';  // Show the main content
+            document.querySelector('.click-to-enter').style.display = 'none';  // Hide the "Click to Enter" button
+        }
+    </script>
+
+</body>
+</html>

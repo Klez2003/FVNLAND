@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+header h1, header h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+#img-div {
+  margin-top: 20px;
+}
+
+#img-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#img-caption {
+  color: #aaa;
+}
+
+#theme-toggle {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+#theme-toggle:hover {
+  background-color: #444;
+}
+
+.title-pg {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Light Mode */
+body.light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header.light {
+  background-color: #333;
+  color: #fff;
+}
+
+.title-pg.light {
+  color: #555;
+}
+
+ul.light {
+  background-color: #fff;
+  color: #333;
+}
+
+ul.light li {
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9; /* Slightly gray background for visibility */
+  color: #333;
+}
+
+ul.light li:hover {
+  background-color: #ddd; /* Highlight on hover */
+}
+
+footer.light {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header.dark {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+.title-pg.dark {
+  color: #ddd;
+}
+
+ul.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+ul.dark li {
+  border-bottom: 1px solid #444;
+  background-color: #444; /* Dark background for visibility */
+  color: #e0e0e0;
+}
+
+ul.dark li:hover {
+  background-color: #555; /* Highlight on hover */
+}
+
+footer.dark {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+/* Purple Lean Mode */
+body.purple-lean {
+  background-color: #7f1f9a;
+  color: #fff;
+}
+
+header.purple-lean {
+  background-color: #9b4d97;
+}
+
+.title-pg.purple-lean {
+  color: #e0c0f7;
+}
+
+ul.purple-lean {
+  background-color: #9b4d97;
+  color: #fff;
+}
+
+ul.purple-lean li {
+  border-bottom: 1px solid #c17bcd;
+  background-color: #b57fcf; /* Purple lean background for visibility */
+  color: #fff;
+}
+
+ul.purple-lean li:hover {
+  background-color: #d49fd7; /* Highlight on hover */
+}
+
+footer.purple-lean {
+  background-color: #9b4d97;
+  color: #fff;
+}
+
+footer.purple-lean a {
+  color: #d1a1ff;
+}
+
+footer.purple-lean a:hover {
+  color: #b084d1;
+}
+
+/* Make the video responsive */
+.responsive-video {
+  width: 100%;         /* Full width of the container */
+  height: auto;        /* Adjust the height to maintain the aspect ratio */
+  max-width: 100%;     /* Ensure the video doesn't exceed the width of its container */
+}
+
+/* Optional: You can style the video container if needed */
+#video-section {
+  max-width: 100%;
+  margin: 20px 0;      /* Optional margin for spacing */
+  text-align: center;  /* Center the video horizontally */
+}
